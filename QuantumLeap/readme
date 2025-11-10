@@ -71,11 +71,12 @@ Pre-requisites
 Steps to Run
 bash
 Clone this repo
-git clone https://github.com/<your-username>/QuantumLeap-Automation.git
+git clone https://github.com/AyanKumarDash01/QuantumLeap.git
 cd QuantumLeap-Automation
 
 Run all tests
 mvn clean test
 
 Or run specific TestNG suite
+
 mvn test -DsuiteXmlFile=testng.xml
