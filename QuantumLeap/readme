@@ -1,0 +1,81 @@
+QuantumLeap E-Commerce Test Automation
+
+A complete end-to-end automation framework built to validate both web and API layers of a modern e-commerce system using SauceDemo and ReqRes applications.  
+This project demonstrates a full SDET workflow, including Selenium + TestNG, Cucumber BDD, REST Assured, and Extent Reports integration.
+
+----------------------------------------------------------------------------------------------------------------------------
+
+Project Overview
+
+The QuantumLeap Framework automates
+1. UI Functional Testing – Login, Add to Cart, and End-to-End Purchase flow on [SauceDemo](httpswww.saucedemo.com).
+2. API Testing – CRUD operations validation using [ReqRes API](httpsreqres.in).
+3. BDD Integration – Add Item to Cart scenario written in Gherkin syntax.
+4. Reporting – HTML reports with screenshots for failed UI tests using Extent Reports.
+5. Non-Functional Testing Concepts – Performance and Security testing documentation.
+
+----------------------------------------------------------------------------------------------------------------------------
+
+
+Tech Stack
+
+ Category  Tools  Frameworks 
+----------------------------------------------------------------------------------------------------------------------------
+ Language  Java 
+ Build Tool  Maven 
+ UI Automation  Selenium WebDriver 
+ Test Framework  TestNG 
+ BDD Framework  Cucumber 
+ API Testing  REST Assured 
+ Reporting  Extent Reports 
+ Design Pattern  Page Object Model (POM) 
+ Version Control  Git  GitHub 
+----------------------------------------------------------------------------------------------------------------------------
+Key Features
+----------------------------------------------------------------------------------------------------------------------------
+
+ - UI Tests (SauceDemo):
+- Data-driven Login test using TestNG `@DataProvider`
+- End-to-End Purchase Flow:
+  - Login → Add Item → Verify Cart → Checkout → Confirm Order
+- POM architecture for maintainability
+- Explicit waits, screenshot capture, and JS Executor usage
+
+ - BDD (Cucumber + TestNG):
+- Add-to-cart scenario written in Gherkin format
+- Step Definitions reuse POM page methods
+- TestRunner integrated with TestNG XML
+
+ - API Tests (ReqRes):
+- **GET** → Fetch user list  
+- **POST** → Create new user  
+- **PUT** → Update existing user  
+- Validations for status codes and response bodies
+
+ - Reports:
+- Extent Report auto-generated after every run
+- Screenshots for any failed UI test steps
+Non-Functional Docs:**
+- Performance Testing Plan for Login functionality
+- Security Scenarios (Authentication Bypass & XSS)
+
+----------------------------------------------------------------------------------------------------------------------------
+How to Run the Tests
+
+Pre-requisites
+- Java JDK 11+
+- Maven 3+
+- TestNG Plugin (optional for IDE)
+- Chrome Browser & ChromeDriver (auto-managed via WebDriverManager)
+
+Steps to Run
+bash
+Clone this repo
+git clone https://github.com/<your-username>/QuantumLeap-Automation.git
+cd QuantumLeap-Automation
+
+Run all tests
+mvn clean test
+
+Or run specific TestNG suite
+mvn test -DsuiteXmlFile=testng.xml
