@@ -1,34 +1,69 @@
-# 🚀 QuantumLeap E-Commerce Test Automation
+# 🚀 QuantumLeap E-Commerce Test Automation Framework  
 
-> **End-to-End Test Automation Framework** for Web + API layers of a modern e-commerce system.  
-> Built using **Selenium, TestNG, Cucumber, REST Assured**, and **Extent Reports**,  
-> showcasing a complete **SDET workflow** on [SauceDemo](https://www.saucedemo.com) & [ReqRes](https://reqres.in).
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen?style=flat-square)
+![Java](https://img.shields.io/badge/Java-11%2B-orange?style=flat-square&logo=openjdk)
+![Maven](https://img.shields.io/badge/Maven-3%2B-red?style=flat-square&logo=apachemaven)
+![Selenium](https://img.shields.io/badge/Selenium-WebDriver-43B02A?style=flat-square&logo=selenium)
+![TestNG](https://img.shields.io/badge/TestNG-Automation-blueviolet?style=flat-square)
+![Cucumber](https://img.shields.io/badge/Cucumber-BDD-23D96C?style=flat-square&logo=cucumber)
+![REST Assured](https://img.shields.io/badge/REST%20Assured-API%20Testing-2C8EBB?style=flat-square)
+![Extent Reports](https://img.shields.io/badge/Extent%20Reports-Reporting-blue?style=flat-square)
 
 ---
 
-## 🌐 Project Overview
+### 🎯 Industry-Standard E-Commerce Test Automation Framework  
 
-**QuantumLeap** validates the complete e-commerce journey — from UI flows to API integration.
+**QuantumLeap** is a production-grade automation framework built to validate both **UI and API layers** of modern e-commerce platforms.  
+Designed following **SDET best practices**, it integrates multiple test types (UI, API, BDD) with **professional reporting, documentation, and CI/CD readiness.**
 
-| Area | Description |
+---
+
+## 📋 Overview  
+
+QuantumLeap demonstrates **enterprise-level automation capabilities** using [SauceDemo](https://www.saucedemo.com) and [ReqRes](https://reqres.in).
+
+| Type | Description |
 |------|--------------|
-| 🧩 **UI Functional Testing** | Automates Login, Add to Cart, Checkout, and Purchase Flow on SauceDemo |
-| 🔗 **API Testing** | Validates CRUD operations on ReqRes API |
-| 🧠 **BDD Integration** | Implements “Add to Cart” scenario using Cucumber (Gherkin syntax) |
-| 📊 **Reporting** | HTML Reports + Screenshots (Extent Reports) |
-| ⚙️ **Non-Functional** | Performance & Security Testing documentation |
+| 🌐 **UI Automation** | Login, Cart, Checkout workflows using Selenium + TestNG |
+| 🔗 **API Automation** | CRUD operations on ReqRes API with REST Assured |
+| 🧩 **BDD** | Add-to-cart scenario using Cucumber (Gherkin syntax) |
+| 📊 **Reporting** | HTML reports with screenshots (Extent Reports) |
+| ⚡ **Non-Functional** | Performance & Security test plans |
 
 ---
 
-## 🧰 Tech Stack
+## ✨ What Makes QuantumLeap Special  
+
+🏗️ **End-to-End Coverage** – Full automation of web + API layers  
+📊 **Professional Reports** – Extent Reports with screenshots and analytics  
+⚙️ **Scalable Architecture** – POM design + modular structure  
+🔁 **CI/CD Ready** – GitHub Actions compatible  
+📘 **Comprehensive Docs** – Performance & Security plans included  
+
+---
+
+## 🧠 Core Framework Features  
+
+| Feature | Technology | Status |
+|----------|-------------|---------|
+| 🌐 UI Automation | Selenium WebDriver + Page Object Model | ✅ Complete |
+| 📝 BDD Testing | Cucumber (Gherkin Scenarios) | ✅ Complete |
+| 🔗 API Automation | REST Assured + JSON Validation | ✅ Complete |
+| 📊 Reporting | Extent Reports + Screenshot Integration | ✅ Complete |
+| 🧪 Performance Plan | Login Load Test Strategy | ✅ Documented |
+| 🔄 CI/CD Pipeline | GitHub Actions | 🧩 Planned |
+
+---
+
+## 🧰 Tech Stack  
 
 | Category | Tools / Frameworks |
 |-----------|--------------------|
-| **Language** | Java |
+| **Language** | Java 11+ |
 | **Build Tool** | Maven |
-| **UI Automation** | Selenium WebDriver |
+| **UI Testing** | Selenium WebDriver |
 | **Test Framework** | TestNG |
-| **BDD Framework** | Cucumber |
+| **BDD** | Cucumber |
 | **API Testing** | REST Assured |
 | **Reporting** | Extent Reports |
 | **Design Pattern** | Page Object Model (POM) |
@@ -36,53 +71,27 @@
 
 ---
 
-## 🌟 Key Features
+## ⚙️ Installation & Setup  
 
-### 🔹 UI Tests (SauceDemo)
-- Data-driven login using TestNG `@DataProvider`
-- End-to-End Purchase Flow  
-  → *Login → Add Item → Verify Cart → Checkout → Confirm Order*  
-- Explicit waits, Screenshot Capture, and JS Executor usage  
-- Modular POM structure for reusability
+### 🧾 Prerequisites  
 
-### 🔹 BDD (Cucumber + TestNG)
-- “Add to Cart” feature written in **Gherkin**
-- Step Definitions reuse POM methods
-- TestRunner integrated with TestNG XML
-
-### 🔹 API Tests (ReqRes)
-- **GET** → Fetch User List  
-- **POST** → Create User  
-- **PUT** → Update User  
-- Validates Status Codes, Response Schema, and Body Assertions
-
-### 🔹 Reports
-- Auto-generated HTML Report (Extent Reports)
-- Embedded Screenshots for failed UI tests
-
-### 🔹 Non-Functional Docs
-- Performance Testing Plan for Login Flow  
-- Security Scenarios: *Authentication Bypass, XSS Validation*
-
----
-
-## ⚙️ How to Run Tests
-
-### 🔧 Prerequisites
-- Java **JDK 11+**
-- Maven **3+**
+- Java JDK 11+  
+- Maven 3.6+  
+- Git (latest)  
 - Chrome Browser (WebDriver auto-managed)
-- IDE with TestNG Plugin *(optional)*
 
-### ▶️ Steps to Run
+### 📦 Setup Commands  
 
 ```bash
-# Clone the Repository
+# Clone Repository
 git clone https://github.com/AyanKumarDash01/QuantumLeap.git
 cd QuantumLeap-Automation
+
+# Install Dependencies
+mvn clean install
 
 # Run All Tests
 mvn clean test
 
-# Or Run Specific TestNG Suite
+# Run Specific TestNG Suite
 mvn test -DsuiteXmlFile=testng.xml
