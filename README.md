@@ -1,7 +1,6 @@
 # 🚀 QuantumLeap E-Commerce Test Automation Framework  
 
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen?style=flat-square)
-![JavaScript](https://img.shields.io/badge/JavaScript-FFD700?style=for-the-badge&logo=javascript&logoColor=black)
 ![Maven](https://img.shields.io/badge/Maven-3%2B-red?style=flat-square&logo=apachemaven)
 ![Selenium](https://img.shields.io/badge/Selenium-WebDriver-43B02A?style=flat-square&logo=selenium)
 ![TestNG](https://img.shields.io/badge/TestNG-Automation-blueviolet?style=flat-square)
