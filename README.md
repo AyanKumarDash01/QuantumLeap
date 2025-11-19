@@ -10,9 +10,9 @@
 
 ---
 
-### 🎯 Industry-Standard E-Commerce Test Automation Framework  
+### 🎯 QuantumLeap E-Commerce Test Automation Framework  
 
-**QuantumLeap E-Commerce Test Automation Framework** is a testing setup designed to test e-commerce websites in a clean, professional, and reliable way. It follows modern QA practices and includes everything needed to automate and validate all major features of an online store**
+**It** is a testing setup designed to test e-commerce websites in a clean, professional, and reliable way. It follows modern QA practices and includes everything needed to automate and validate all major features of an online store**
 
 ---
 
