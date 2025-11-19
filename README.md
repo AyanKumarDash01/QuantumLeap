@@ -10,14 +10,13 @@
 
 ---
 
-### 🎯 QuantumLeap E-Commerce Test Automation Framework  
+### Overview
 
 **It** is a testing setup designed to test e-commerce websites in a clean, professional, and reliable way. It follows modern QA practices and includes everything needed to automate and validate all major features of an online store**
 
 ---
 
-## 📋 Overview  
-
+## 
 QuantumLeap demonstrates **enterprise-level automation capabilities** using [SauceDemo](https://www.saucedemo.com) and [ReqRes](https://reqres.in).
 
 | Type | Description |
