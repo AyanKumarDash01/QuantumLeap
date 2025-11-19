@@ -58,7 +58,7 @@ QuantumLeap demonstrates **enterprise-level automation capabilities** using [Sau
 
 | Category | Tools / Frameworks |
 |-----------|--------------------|
-| **Language** | JavaScript |
+| **Language** | java |
 | **Build Tool** | Maven |
 | **UI Testing** | Selenium WebDriver |
 | **Test Framework** | TestNG |
